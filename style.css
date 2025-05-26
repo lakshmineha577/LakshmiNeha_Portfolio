@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #121212;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ff4a57;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.dot {
+  color: #ff4a57;
+}
+
+.intro h2 {
+  font-size: 2.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.intro h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #c2c2c2;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background-color: #ff4a57;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #e53945;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid #ff4a57;
+  color: #ff4a57;
+}
+
+.secondary:hover {
+  background-color: #ff4a57;
+  color: #fff;
+}
+
+.profile-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  border: 4px solid #ff4a57;
+}
+
+.skills-bar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skills-bar span {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #ff4a57;
+}
+
+.about, .projects, .contact, .achievements {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2, .projects h2, .contact h2, .achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff4a57;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.stats div h3 {
+  font-size: 1.8rem;
+  color: #ff4a57;
+}
+
+.project {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #ff4a57;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.achievements ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #121212;
+  color: #aaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+}
